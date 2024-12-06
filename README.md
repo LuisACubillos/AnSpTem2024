@@ -2,6 +2,8 @@
 
 **Taller CIMAR-IFOP de Transferencia y Discusión Metodológíca Indicadores de Biomasa de Crustáceos Demersales**
 
+![](logos/logos_readme.png)
+
 El Instituto de Fomento Pesquero (IFOP) asignó al centro de Investigaciones Marinas Ltda. (CIMAR) la ejecución de Talleres de Transferencia de conocimientos experiencias y criterios para la evaluación directa mediante el método de área barrida de los recursos langostino amarillo, langostino colorado y camarón nailon.
 
 Los objetivos son:
@@ -16,7 +18,7 @@ Transferir conocimientos teóricos y prácticos sobre la estimación de índices
 
 Para ello, se consideró una programación de talleres de trabajo teórico-prácticos. En este ámbito, este repositorio da cuenta del Modulo de Análisis Espaciotemporal de variables como la ocurrencia a través de datos de presencia-ausencia y densidad a través de la captura por unidad de área que han sido obtenidos en los cruceros de evaluación de biomasa vulnerable de crustáceos demersales mediante el método del área barrida en Chile.
 
-El Dr. Luis Cubillos, ceo CEPMAR SpA e investigador asociado del Centro COPAS Coastal y Lab. EPOMAR de la Universidad de Concepción  es el relator del Modulo de Análisis Espaciotemporal, según:
+El Dr. Luis Cubillos, CEPMAR SpA e investigador asociado del Centro COPAS Coastal y Lab. EPOMAR de la Universidad de Concepción  es el relator del Modulo de Análisis Espaciotemporal con modelos Bayesianos Jerárquicos, según:
 
 Día 1: Fundamentos para el análisis espaciotemporal con modelos Bayesianos jerárquicos con INLA 
 
@@ -31,27 +33,21 @@ Práctico | Trama triangulada SPDE
 Práctico | Correlación espacial Mátern y estructura espacial
 Práctico | Distribución oportunista y Progresiva
 Práctico | Co-variables ¿efectos no-lineales? y factores
-Práctico | Diferencias y similitudes con GAMM
+Práctico | Diferencias y similitudes con sdmTMB
 
 Día 2: Análisis espacio-temporal de datos de ocurrencia
 
-Horario       | Contenidos
+Horario 14:00-17:00       | Contenidos
 --------------|--------------------------
-14:00 - 17:00 | Modelos para la ocurrencia de crustáceos demersales
-              | Modelos para la densidad o CPUA
-              | Grilla de predicción y estimación de índices de biomasa
+Práctico | Modelos para la ocurrencia
+Práctico | Modelos para la densidad o CPUA
+Práctico | Grilla de predicción
+Práctico | Indices de biomasa
 
 Día 3: Análisis espacial de tallas y otros rasgos demográficos
 
-Horario       | Contenidos
---------------|--------------------------
-14:00 - 15:00 | Modelos para el tratamiento de datos biológicos
+Horario 14:00-15:00      | Contenidos
+-------------|--------------------------
+Demostración | Modelos para el tratamiento de datos biológicos
+Perspectivas | Enfoque modelo-basado
 
-
-Los avances se reportan en el siguiente enlace: [indicadores operacionales y biológicos de las pesquerías de langostino colorado y amarillo, 2024]( https://luisacubillos.github.io/Indicadores_camanchaca/)
-
-Luis Cubillos
-
-Jefe Proyecto
-
-Asistencia:

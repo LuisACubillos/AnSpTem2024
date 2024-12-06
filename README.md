@@ -20,20 +20,18 @@ El Dr. Luis Cubillos, ceo CEPMAR SpA e investigador asociado del Centro COPAS Co
 
 Día 1: Fundamentos para el análisis espaciotemporal con modelos Bayesianos jerárquicos con INLA 
 
-Horario       | Contenidos
+Horario 14:00 - 15:00       | Contenidos
 --------------|--------------------------
-14:00 - 15:00 | Fundamentos para el análisis espaciotemporal con modelos
-Bayesianos jerárquicos con INLA.
-              | Pretratamiento de datos geoespaciales.
-              | Introducción a packages _sf_, _terra_, _sdmTMB_ e _INLA_
+Teoría | Fundamentos para el análisis espaciotemporal
+Teoría | Modelos Bayesianos jerárquicos con INLA.
+Práctico | Packages _sf_, _terra_, _sdmTMB_ e _INLA_
+Práctico | Pre-tratamiento de datos geoespaciales: Mapa Base
 15:00 - 15:15 | Pausa
-15:15 - 17:00 | Trama triangulada Stochastic Partial Differential Equations
-              | (SPDE) para representar discretamente el camp GMRF
-              | Correlación espacial Mátern, y estructura temporal
-              | (realizaciones independientes y correlacionados temporalmente)
-              | ¿Cómo analizar efectos no-lineales de co-variables
-              | continuas y cómo modelar efectos de factores en INLA.
-              | Diferencias y similitudes con GAMM
+Práctico | Trama triangulada SPDE
+Práctico | Correlación espacial Mátern y estructura espacial
+Práctico | Distribución oportunista y Progresiva
+Práctico | Co-variables ¿efectos no-lineales? y factores
+Práctico | Diferencias y similitudes con GAMM
 
 Día 2: Análisis espacio-temporal de datos de ocurrencia
 

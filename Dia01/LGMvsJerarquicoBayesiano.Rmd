@@ -1,0 +1,76 @@
+---
+title: "Modelo Latente Gaussiano y Modelo Jerárquico Bayesiano"
+author: "Luis A. Cubillos"
+date: "2024-12-11"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Modelos Estadísticos: Modelo Latente Gaussiano y Modelo Jerárquico Bayesiano
+
+## Modelo Latente Gaussiano (LGM)
+
+Un **Modelo Latente Gaussiano (Latent Gaussian Model, LGM)** es un modelo estadístico que utiliza variables latentes (\(x\)) para describir la estructura subyacente de los datos observados (\(y\)). Estas variables latentes siguen una distribución normal multivariada.
+
+### Componentes:
+1. **Modelo de datos**: Relaciona las observaciones con las variables latentes:
+   \[
+   y \sim p(y|x, \theta)
+   \]
+   donde \(\theta\) son los parámetros del modelo.
+
+2. **Modelo de las variables latentes**: Las variables latentes tienen una distribución gaussiana:
+   \[
+   x \sim \mathcal{N}(\mu_x, \Sigma_x)
+   \]
+
+3. **Inferencia**: Se realiza típicamente mediante métodos como MCMC o aproximaciones como la inferencia variacional.
+
+### Ejemplo Común:
+- Modelos espaciales y temporales, como los **Campos Aleatorios Gaussianos (GMRF)**.
+
+---
+
+## Modelo Jerárquico Bayesiano
+
+Un **Modelo Jerárquico Bayesiano** organiza los parámetros en varios niveles jerárquicos para capturar variaciones en diferentes escalas. Es útil para datos agrupados o con estructura multinivel.
+
+### Componentes:
+1. **Nivel 1**: Relación entre las observaciones y parámetros específicos de grupo:
+   \[
+   y_i \sim p(y_i | \phi_i, \theta)
+   \]
+
+2. **Nivel 2**: Distribución prior para los parámetros de grupo:
+   \[
+   \phi_i \sim p(\phi_i | \eta)
+   \]
+
+3. **Nivel 3**: Priori global para los parámetros del modelo:
+   \[
+   \eta \sim p(\eta)
+   \]
+
+4. **Inferencia**: Se utiliza inferencia bayesiana para estimar las distribuciones posteriores.
+
+### Ejemplo Común:
+- Modelos multinivel, análisis de efectos aleatorios.
+
+---
+
+## Diferencias entre LGM y Modelo Jerárquico Bayesiano
+
+| **Aspecto**                | **Modelo Latente Gaussiano (LGM)**                                   | **Modelo Jerárquico Bayesiano**                         |
+|----------------------------|----------------------------------------------------------------------|---------------------------------------------------------|
+| **Variable Latente**       | Incluye explícitamente variables no observables con una estructura gaussiana. | No siempre requiere variables latentes explícitas.      |
+| **Estructura**             | Enfocado en la relación entre datos y variables latentes gaussianas. | Estructura multinivel con parámetros específicos y globales. |
+| **Objetivo**               | Modelar la dependencia entre datos observados y variables subyacentes. | Capturar variación entre grupos o niveles.              |
+| **Distribución Prior**     | Priori gaussiana para variables latentes.                           | Puede incluir diversas prioris según niveles jerárquicos. |
+| **Ejemplo Común**          | Modelos espaciales y temporales (e.g., GMRF).                       | Modelos de efectos aleatorios, análisis multinivel.     |
+
+---
+
+Ambos enfoques son herramientas robustas y complementarias en estadística avanzada, con aplicaciones dependiendo del contexto y la estructura de los datos.
